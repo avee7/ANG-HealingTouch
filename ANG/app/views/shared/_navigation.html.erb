@@ -1,0 +1,175 @@
+<!-- Sidebar starts -->
+<div class="sidebar">
+  <!-- Logo -->
+  <div class="logo">
+   <!--  <a href="#"><img src="img/main-logo.jpg" alt="ANG Healing Touch" />
+      <span>A.N.G <br>Healing Touch</span>
+    </a> -->
+    <%= link_to image_tag('main-logo.jpg', :alt => 'ANG'), '/' %>
+    <%= link_to 'A.N.G Healing Touch', '/' %>
+  </div>
+  
+  <div class="sidebar-dropdown"><%= link_to "Navigation", "/" %></div>
+
+  <!--- Sidebar navigation -->
+  <!-- If the main navigation has sub navigation, then add the class "has_sub" to "li" of main navigation. -->
+
+  <div class="s-content">
+    <ul id="nav">
+      <!-- Main menu with font awesome icon -->
+      <li>
+        <%= link_to "Home", "/", :class => "open, br" %>
+        <!-- <a href="index.html" class="open br"> -->
+        <!-- <i class="icon-home"></i> Home</a-->
+        <!-- Sub menu markup -->
+       </li>
+
+      <li class="has_sub">
+        <%= link_to "javaScript:void(0)", :class => "br" do %>
+          Massages for Relaxation – Good Health
+          <span class="pull-right"><i class="icon-chevron-right"></i></span>
+        <% end %>
+
+        
+        <!--a href="#" class="br"--><!-- <i class="icon-list-alt"></i>  Massages for Relaxation – Good Health <span class="pull-right"><i class="icon-chevron-right"></i></span></a-->
+
+        <ul>
+          <li><a href="tasks.html">Foot Massage</a></li>
+          <li><a href="pricing.html">Hand Massage</a></li>
+          <li><a href="service.html">Traditional Thai Massage, Herbal Compress and Herbal Steam</a></li>
+          <li><a href="timeline.html">Royal Siamese Massage</a></li>
+          <li><a href="comingsoon.html">Oil Massages – Aromatherapy</a></li>
+          <li><a href="testimonials.html">Packaged Massages</a></li>
+          <li><a href="support.html">1 day Exotic Stress release Package</a></li>
+        </ul>
+      </li>  
+
+      <li class="has_sub"><a href="#" class="br"><!-- <i class="icon-list-alt"></i> --> Beauty &amp; Spa <br>Treatments <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
+        <ul>
+          <li><a href="careers.html"> Thai Facials</a></li>
+          <li><a href="features.html">Body wraps</a></li>
+          <li><a href="sitemap.html">Body scrubs</a></li>
+          <li><a href="faq.html">Anti-Cellulite Therapy</a></li>
+          <li><a href="profile.html">Aloe Vera After Sun Massage</a></li>
+          <li><a href="login.html">Slimming – Waist Reduction - Weight Control</a></li>
+          <li><a href="register.html">Hair treatments</a></li>
+          <li><a href="register.html">Post Natal Wellness and Beauty Care</a></li>
+        </ul>
+      </li> 
+
+      <li class="has_sub"><a href="#" class="br"><!-- <i class="icon-comments"></i> --> Detoxification &amp; Balancing Treatments  <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
+        <ul>
+          <li><a href="blog1.html">Original Foot Reflexology</a></li>
+          <li><a href="blog3.html">Ear Candling</a></li>
+          <li><a href="blog2.html">Indian Head Massage</a></li>
+          <li><a href="blog-single.html">Body wraps</a></li>
+          <li><a href="blog-single.html">Bio-Magnetic Therapy</a></li>
+          <li><a href="blog-single.html">Chakra – Balancing</a></li>
+          <li><a href="blog-single.html">New life – Karmic release – Soul realization</a></li>
+          <li><a href="blog-single.html">Reiki</a></li>
+          <li><a href="blog-single.html">Colonic Enema - Vasti</a></li>
+          <li><a href="blog-single.html">Yogic Shankh Praklashan</a></li>
+          <li><a href="blog-single.html">Liver Detoxification Therapy</a></li>
+        </ul>
+      </li> 
+
+      <li class="has_sub"><a href="#" class="br"><!-- <i class="icon-comments"></i> --> Ayurvedic Treatments <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
+        <ul>
+          <li><a href="blog1.html">Shirodhara</a></li>
+          <li><a href="blog3.html">Shirobasti</a></li>
+          <li><a href="blog2.html">Netra Basti ( for Eyes)</a></li>
+          <li><a href="blog-single.html">Hridya Dhara (for Heart)</a></li>
+          <li><a href="blog-single.html">Gurda Dhara (for Kidneys)</a></li>
+          <li><a href="blog-single.html">Kati Dhara (for Lower back)</a></li>
+          <li><a href="blog-single.html">Spinal Dhara (for entire backbone)</a></li>
+          <li><a href="blog-single.html">Abhyanga – Medicated Oil Massages</a></li>
+          <li><a href="blog-single.html">Panchakarma-Detoxification </a></li>
+        </ul>
+      </li> 
+
+      <li class="has_sub"><a href="#" class="br"><!-- <i class="icon-comments"></i> --> Therapies &amp; Treatments <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
+        <ul>
+          <li><a href="blog1.html">Aches, Pains and Body stiffness</a></li>
+          <li><a href="blog1.html">Hemiplagia, Hemiparesis, Paralysis</a></li>
+          <li><a href="blog1.html">Auto-immune problems</a></li>
+          <li><a href="blog1.html">Others</a></li>
+        </ul>
+      </li> 
+
+      <li class="has_sub"><a href="#" class="br"><!-- <i class="icon-comments"></i> --> Yoga-Meditation <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
+        <ul>
+          <li><a href="blog1.html">Yoga</a></li>
+          <li><a href="blog3.html">Pranayama</a></li>
+          <li><a href="blog2.html">Meditation</a></li>
+          <li><a href="blog-single.html">Shat Karma – Yoga Lifestyle</a></li>
+          <li><a href="blog-single.html">Sankh Prakshalan</a></li>
+        </ul>
+      </li> 
+
+      <li class="has_sub"><a href="#" class="br"><!-- <i class="icon-comments"></i> --> Consultations <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
+        <ul>
+          <li><a href="blog1.html">General Health Consultation</a></li>
+          <li><a href="blog3.html">Diet-Lifestyle Planning</a></li>
+          <li><a href="blog2.html">For Therapies &amp; Treatments</a></li>
+          <li><a href="blog-single.html">For Panchakarma - Detoxification</a></li>
+          <li><a href="blog-single.html">For Colonic Enema</a></li>
+          <li><a href="blog-single.html">For Ayurvedic treatments</a></li>
+          <li><a href="blog-single.html">For Liver Detoxification, Hair treatments etc.</a></li>
+        </ul>
+      </li>
+
+      <li class="has_sub"><a href="#" class="br"><!-- <i class="icon-comments"></i> --> Other Services <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
+        <ul>
+          <li><a href="blog1.html">Hotel-Apartment booking</a></li>
+          <li><a href="blog3.html">Tours, Sightseeing, Taxi</a></li>
+          <li><a href="blog2.html">Seminar-Meetings</a></li>
+        </ul>
+      </li> 
+
+      <li class="has_sub"><a href="#" class="br"><!-- <i class="icon-comments"></i> --> Registrations &amp;<br>Reservations <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
+        <ul>
+          <li><a href="blog1.html">Register or Book your appointment</a></li>
+          <li><a href="blog3.html">Payments for Confirmed appointments.</a></li>
+        </ul>
+      </li>
+
+      <li><a href="aboutus.html" class="br"><!-- <i class="icon-user"></i> --> About Us</a></li>
+      <li><a href="contactus.html" class="br"><!-- <i class="icon-envelope-alt"></i> --> Contact Us</a></li>
+
+      <li class="has_sub"><a href="#" class="br"><!-- <i class="icon-comments"></i> --> Testimonials <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
+        <ul>
+          <li><a href="blog1.html">Written Testimonials</a></li>
+          <li><a href="blog3.html">Video Testimonials</a></li>
+        </ul>
+      </li>
+
+      <li class="has_sub"><a href="#" class="br"><!-- <i class="icon-comments"></i> -->   FAQ  <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
+        <ul>
+          <li><a href="#">Massages for Relaxation –Good Health</a></li>
+          <li><a href="#">Beauty & Spa Treatments</a></li>
+          <li><a href="#">Detoxification and Balancing Treatments</a></li>
+          <li><a href="#">Ayurvedic Treatments</a></li>
+          <li><a href="#">For Therapies & Treatments</a></li>
+          <li><a href="#">Yoga - Meditation</a></li>
+          <li><a href="#">Consultations</a></li>
+          <li><a href="#">Others</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+    <!-- Sidebar search -->
+
+
+     <!--  <form class="form-search s-widget">
+        <div class="input-append">
+          <input type="text" class="input-small search-query">
+          <button type="submit" class="btn btn-danger">Search</button>
+        </div>
+      </form> -->
+
+  </div>
+
+
+
+</div>
+<!-- Sidebar ends -->

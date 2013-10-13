@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ANG Healing Touch</title>
+		<%= favicon_link_tag image_path('favicon.png') %>
+	  
+	  <!-- HTML5 Support for IE -->
+	  <!--[if lt IE 9]>
+	  <script src="/assets/javascripts/html5shim.js"></script>
+	  <![endif]-->
+
+	  <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700" %>
+	  <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700", "http://fonts.googleapis.com/css?family=Pacifico", "http://fonts.googleapis.com/css?family=Sail" %>
+	  <%= stylesheet_link_tag "all" %>
+
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+
+		<%= render :partial => 'shared/header' %>
+		<%= render :partial => 'shared/navigation' %>
+
+		<!-- Main content starts -->
+		<div class="content">
+			<%= yield %>
+		</div>
+		<!-- Main content ends -->
+
+		<div class="clearfix"></div>
+		<%= render :partial => 'shared/footer' %>
+		<%= render :partial => 'shared/appointment-form' %>
+
+		<!-- Scroll to top -->
+		<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span> 
+
+		<%= javascript_include_tag "all" %>
+
+	</body>
+</html>
